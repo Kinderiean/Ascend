@@ -1,0 +1,6 @@
+cd "C:/Users/Kinderiean/Documents/Claude/Projects/Life Maxing/ascend"
+git status   # confirm .env is NOT listed
+git add .
+git commit -m "Phase 0-9 partial: foundations, security, auth, routines, IAP, Sentry, legal site"
+git remote add origin https://github.com/Kinderiean/Ascend.git   # only if not already added
+git push -u origin main
