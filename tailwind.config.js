@@ -1,0 +1,58 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    './app/**/*.{js,jsx,ts,tsx}',
+    './components/**/*.{js,jsx,ts,tsx}',
+    './lib/**/*.{js,jsx,ts,tsx}',
+  ],
+  presets: [require('nativewind/preset')],
+  theme: {
+    extend: {
+      colors: {
+        bg: '#0C1B1A',
+        card: '#F4F1EA',
+        cardInk: '#0C1B1A',
+        cardAlt: '#0F2423',
+        cardAltInk: '#F4F1EA',
+        accent: '#CBBBF7',
+        accentInk: '#1D1146',
+        muted: 'rgba(12,27,26,0.55)',
+        mutedAlt: 'rgba(244,241,234,0.55)',
+        ok: '#9BE6B0',
+        warn: '#F2B36B',
+        err: '#F08686',
+        // Aspect colors
+        looks: '#F2A7B0',
+        physical: '#F2B36B',
+        mental: '#CBBBF7',
+        spiritual: '#9BE6B0',
+        communication: '#7BC4A4',
+        humor: '#F0C6E2',
+        career: '#8FB8E0',
+        money: '#E4B15A',
+        routine: '#A9B1BB',
+        relationships: '#F2A7B0',
+        discipline: '#C99A7A',
+        knowledge: '#7B8AA3',
+      },
+      borderRadius: {
+        card: '28px',
+        row: '20px',
+        pill: '999px',
+        tile: '18px',
+        chip: '999px',
+      },
+      fontFamily: {
+        serif: ['InstrumentSerif_400Regular'],
+        serifItalic: ['InstrumentSerif_400Regular_Italic'],
+        sans: ['Geist_400Regular'],
+        sansMedium: ['Geist_500Medium'],
+        sansSemiBold: ['Geist_600SemiBold'],
+        sansBold: ['Geist_700Bold'],
+        mono: ['JetBrainsMono_400Regular'],
+        monoMedium: ['JetBrainsMono_500Medium'],
+      },
+    },
+  },
+  plugins: [],
+};

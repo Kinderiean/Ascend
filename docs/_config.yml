@@ -1,0 +1,18 @@
+title: Ascend
+description: Life optimization, personalized.
+markdown: kramdown
+theme: jekyll-theme-minimal
+permalink: /:title
+
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: default
+
+include:
+  - privacy.md
+  - terms.md
+  - eula.md
+  - index.md

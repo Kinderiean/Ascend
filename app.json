@@ -1,0 +1,52 @@
+{
+  "expo": {
+    "name": "Ascend",
+    "slug": "ascend",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0C1B1A"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.ascend.app",
+      "usesAppleSignIn": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0C1B1A"
+      },
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false,
+      "package": "com.ascend.app"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      "expo-font",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/icon.png",
+          "color": "#CBBBF7"
+        }
+      ],
+      "expo-web-browser",
+      "expo-apple-authentication",
+      "@sentry/react-native"
+    ],
+    "scheme": "ascend",
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
